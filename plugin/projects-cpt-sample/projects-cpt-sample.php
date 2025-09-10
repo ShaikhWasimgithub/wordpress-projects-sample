@@ -67,7 +67,7 @@ function pcs_create_terms_and_samples() {
     foreach($samples as $s){
         $id = wp_insert_post(array(
             'post_title'=>$s[0],
-            'post_content'=>'यह project का long description है।',
+            'post_content'=>' project  long description ',
             'post_type'=>'project',
             'post_status'=>'publish'
         ));

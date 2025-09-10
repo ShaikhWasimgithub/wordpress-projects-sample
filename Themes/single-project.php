@@ -25,9 +25,9 @@
     <!-- Long Description (Text Only, Image Remove) -->
     <div class="project-long">
       <?php 
-        // Content me agar image daal bhi di gayi ho to usko hata do
+        
         $content = get_the_content();
-        // Regex se <img> tag remove karte hain
+        
         $content = preg_replace('/<img[^>]+\>/i', '', $content);
         echo apply_filters('the_content', $content);
       ?>
